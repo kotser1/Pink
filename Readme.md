@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Сергей Котельников](https://up.htmlacademy.ru/adaptive/21/user/1487045).
-* Наставник: `Неизвестно`.
+* Наставник: [Анатолий Пазюк](https://htmlacademy.ru/profile/id380487).
 
 ---
 
