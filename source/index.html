@@ -1,12 +1,237 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="https://via.placeholder.com/150x150" width="74" height="23" alt="Логотип приложения Pink">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--current">
+              <a href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <main class="page-main">
+      <h1 class="visually-hidden">Мобильное приложение "Pink"</h1>
+
+      <!-- Блок 'Загрузки' -->
+      <section class="page-main_download download">
+        <h2 class="visually-hidden">Где можно скачать наше приложение</h2>
+        <p class="download__title">Взгляните на жизнь иначе!</p>
+        <a class="download__button" href="#">Скачать приложение</a>
+        <ul class="download__markets-list">
+          <li class="download__markets-item">
+            <a class="download__markets-link"><img src="https://via.placeholder.com/150x150" alt="логотип Apple"></a>
+          </li>
+          <li class="download__markets-item">
+            <a class="download__markets-link"><img src="https://via.placeholder.com/150x150" alt="логотип Google Android"></a>
+          </li>
+          <li class="download__markets-item">
+            <a class="download__markets-link"><img src="https://via.placeholder.com/150x150" alt="логотип Microsoft Windows"></a>
+          </li>
+        </ul>
+        <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+
+      <!-- Преимущества -->
+      <section class="page-main__advantages advantages">
+        <h2 class="visually-hidden">Преимущества приложения Pink</h2>
+        <p class="advantages__title">Устали от серости мегаполиса?</p>
+        <p class="advantages__title">Нам есть, что вам предложить!</p>
+        <div class="advantages__wrapper">
+          <ul class="advantages__list">
+            <li class="advantages__item advantages-item">
+              <img class="advantages-item__image advantages-item__image--hidden" src="https://via.placeholder.com/150x150" alt="1-й скриншот приложения">
+              <h3 class="advantages-item__heading">Поднимает настроение</h3>
+              <p class="advantages-item__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item advantages-item">
+              <img class="advantages-item__image advantages-item__image--hidden" src="https://via.placeholder.com/150x150" alt="2-й скриншот приложения">
+              <h3 class="advantages-item__heading">Меняет мир вокруг</h3>
+              <p class="advantages-item__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__item advantages-item">
+              <img class="advantages-item__image advantages-item__image--hidden" src="https://via.placeholder.com/150x150" alt="3-й скриншот приложения">
+              <h3 class="advantages-item__heading">Заводит новых друзей</h3>
+              <p class="advantages-item__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+          <img class="advantages__picture advantages__picture--hidden" src="https://via.placeholder.com/150x150" alt="Скриншот приложения Pink с изображением смайлика и надписью 'Всем привет!' ">
+        </div>
+      </section>
+
+      <!-- Этот блок скрыт в мобильной версии -->
+      <section class="page-main__research research">
+        <h2 class="visually-hidden">Исследования</h2>
+        <div class="research__wrapper">
+          <h3 class="research__title">Эффект на 24 часа!</h3>
+          <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="research__link" href="#">Узнать больше об исследовании</a>
+        </div>
+      </section>
+
+      <!-- Отзывы -->
+      <section class="page-main__reviews reviews">
+        <div class="reviews__wrapper  slider">
+          <h2 class="visually-hidden">Отзывы о нас</h2>
+          <div class="reviews__list slider__list">
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__author-info">25 лет, водитель трамвая</p>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </blockquote>
+
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__author-info">25 лет, водитель трамвая</p>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </blockquote>
+
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__author-info">25 лет, водитель трамвая</p>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </blockquote>
+
+            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+            <button class="reviews__next" type="button">Следующий отзыв</button>
+          </div>
+
+          <div class="reviews__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--current" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Тарифы -->
+      <section class="page-main__price price">
+        <h2 class="visually-hidden">Тарифы</h2>
+        <table class="price__table table">
+          <thead class="table__head">
+            <tr class="table__row">
+              <td class="table__cell table__cell--hidden"></td>
+              <td class="table__cell">
+                <p class="table__cell-title">База</p>
+                <p class="table__cell-cost">1,99 USD</p>
+              </td>
+              <td class="table__cell table__cell--sticker">
+                <p class="table__cell-title">Стандарт</p>
+                <p class="table__cell-cost">3,99 USD</p>
+              </td>
+              <td class="table__cell">
+                <p class="table__cell-title">Анлим</p>
+                <p class="table__cell-cost">9,99 USD</p>
+              </td>
+            </tr>
+          </thead>
+
+          <tbody class="table__body">
+            <tr class="table__row">
+              <td class="table__cell"><span class="table__cell-text table__cell-text--not-mobile">Розовый фильтр</span></td>
+              <td class="table__cell table__cell--checked"><span class="table__cell-text table__cell-text--mobile">Розовый фильтр</span></td>
+              <td class="table__cell table__cell--checked"><span class="table__cell-text table__cell-text--mobile">Розовый фильтр</span></td>
+              <td class="table__cell table__cell--checked"><span class="table__cell-text table__cell-text--mobile">Розовый фильтр</span></td>
+            </tr>
+
+            <tr class="table__row">
+              <td class="table__cell"><span class="table__cell-text table__cell-text--not-mobile">Смайлики</span></td>
+              <td class="table__cell table__cell--not-checked"><span class="table__cell-text table__cell-text--mobile">Смайлики</span></td>
+              <td class="table__cell table__cell--checked"><span class="table__cell-text table__cell-text--mobile">Смайлики</span></td>
+              <td class="table__cell table__cell--checked"><span class="table__cell-text table__cell-text--mobile">Смайлики</span></td>
+            </tr>
+
+            <tr class="table__row">
+              <td class="table__cell"><span class="table__cell-text table__cell-text--not-mobile">Комментарии</span></td>
+              <td class="table__cell table__cell--not-checked"><span class="table__cell-text table__cell-text--mobile">Комментарии</span></td>
+              <td class="table__cell table__cell--not-checked"><span class="table__cell-text table__cell-text--mobile">Комментарии</span></td>
+              <td class="table__cell table__cell--checked"><span class="table__cell-text table__cell-text--mobile">Комментарии</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="price__toggles">
+          <button class="price__toggle" type="button">1</button>
+          <button class="price__toggle price__toggle--current" type="button">2</button>
+          <button class="price__toggle" type="button">3</button>
+        </div>
+      </section>
+
+      <!-- Контакты -->
+      <section class="page-main__contacts contacts">
+        <div class="contacts__wrapper">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="contacts__headline">Остались вопросы?<br>Свяжитесь с нами!</p>
+
+          <div class="contacts__item">
+            <p class="contacts__text">Звоните:</p>
+            <a class="contacts__info" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </div>
+
+          <div class="contacts__item">
+            <p class="contacts__text">Пишите:</p>
+            <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+
+          <div class="contacts__item">
+            <p class="contacts__text">Приезжайте в гости:</p>
+            <p class="contacts__info">ул. Большая Конюшенная, 19/8</p>
+          </div>
+        </div>
+        <div class="contacts__map">
+          <!-- iframe с картой-->
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <img src="https://via.placeholder.com/150x150" width="145" height="40" alt="Логотип приложения Pink">
+        </div>
+
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">Twitter</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">Facebook</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">Youtube</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
 
   </body>
 </html>
