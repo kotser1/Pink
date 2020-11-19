@@ -45,16 +45,16 @@
         <form class="contest__form form" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="form__person person">
             <div class="person__surname">
-              <label>Фамилия</label>
-              <input class="" id="" type="text" name="" placeholder="Укажите фамилию *">
+              <label for="person-surname">Фамилия</label>
+              <input class="person__input" id="person-surname" type="text" name="surname" placeholder="Укажите фамилию *" required>
             </div>
             <div class="person__name">
-              <label>Имя</label>
-              <input class="" id="" type="text" name="" placeholder="Введите ваше имя *">
+              <label for="person-name">Имя</label>
+              <input class="person__input" id="person-name" type="text" name="name" placeholder="Введите ваше имя *" required>
             </div>
             <div class="person__middle-name">
-              <label>Отчество</label>
-              <input class="" id="" type="text" name="" placeholder="Ну и отчество тоже *">
+              <label for="middle-name">Отчество</label>
+              <input class="person__input" id="middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже *" required>
             </div>
           </fieldset>
 
@@ -62,28 +62,28 @@
             <legend>Ваши безбашенные достижения в путешествии</legend>
             <ul class="achievements__list">
               <li class="achievements__item">
-                <input class="" type="checkbox" id="" name="" checked>
-                <label for="">Сделал селфи с акулой</label>
+                <input class="achievements__input" type="checkbox" id="shark-selfie" name="shark-selfie" checked>
+                <label for="shark-selfie">Сделал селфи с акулой</label>
               </li>
               <li class="achievements__item">
-                <input class="" type="checkbox" id="" name="" checked>
-                <label for="">Обгорел на пляже</label>
+                <input class="achievements__input" type="checkbox" id="sunburn" name="sunburn" checked>
+                <label for="sunburn">Обгорел на пляже</label>
               </li>
               <li class="achievements__item">
-                <input class="" type="checkbox" id="" name="">
-                <label for="">Видел Чака Норриса</label>
+                <input class="achievements__input" type="checkbox" id="chuck-norris" name="chuck-norris">
+                <label for="chuck-norris">Видел Чака Норриса</label>
               </li>
               <li class="achievements__item">
-                <input class="" type="checkbox" id="" name="">
-                <label for="">Накупил сувениров</label>
+                <input class="achievements__input" type="checkbox" id="buy-souvenirs" name="buy-souvenirs">
+                <label for="buy-souvenirs">Накупил сувениров</label>
               </li>
               <li class="achievements__item">
-                <input class="" type="checkbox" id="" name="" checked>
-                <label for="">Удержал башню</label>
+                <input class="achievements__input" type="checkbox" id="hold-tower" name="hold-tower" checked>
+                <label for="hold-tower">Удержал башню</label>
               </li>
               <li class="achievements__item">
-                <input class="" type="checkbox" id="" name="">
-                <label for="">Разгромил отель</label>
+                <input class="achievements__input" type="checkbox" id="destroy-hotel" name="destroy-hotel">
+                <label for="destroy-hotel">Разгромил отель</label>
               </li>
             </ul>
           </fieldset>
