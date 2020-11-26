@@ -1,0 +1,23 @@
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  row-gap: 5px;
+  width: 172px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 41px;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: $white;
+  border-radius: 50%;
+  border: 3px solid $social-border;
+  margin-right: 2px;
+}

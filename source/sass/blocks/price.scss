@@ -1,0 +1,27 @@
+.price {
+  background-color: $section-background;
+  padding-bottom: 49px;
+  padding-top: 90px;
+}
+
+.price__toggles {
+  text-align: center;
+  padding-top: 45px;
+}
+
+.price__toggle {
+  width: 6px;
+  height: 6px;
+  background-color: $toggle;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  margin-right: 20px;
+}
+
+.price__toggle--current {
+  width: 12px;
+  height: 12px;
+  border: 3px solid $basic-blue;
+  background-color: $white;
+}
