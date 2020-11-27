@@ -1,0 +1,149 @@
+.form legend {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $pink;
+  text-transform: uppercase;
+  margin-bottom: 41px;
+}
+
+.form__person {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__person label {
+  color: $pink;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form__person-input {
+  font-size: 18px;
+  box-sizing: border-box;
+  padding: 17px 0 18px 24px;
+  min-height: 59px;
+  border: 2px solid $form-border;
+  border-radius: 1px;
+  margin-bottom: 29px;
+
+  &::-webkit-input-placeholder {
+    color: $basic-blue;
+  }
+
+  &::-moz-placeholder {
+    color: $basic-blue;
+    opacity: 1;
+  }
+}
+
+.form__achievements {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__achievements-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form__achievements-item {
+  margin-bottom: 47px;
+}
+
+.form__contacts {
+  border: none;
+  margin: 0;
+  padding: 40px 0 0 0;
+}
+
+.form__contacts legend {
+  display: none;
+}
+
+.form__contacts label {
+  color: $pink;
+  text-transform: uppercase;
+}
+
+.form__contacts input {
+  font-size: 18px;
+  box-sizing: border-box;
+  padding: 17px 0 18px 24px;
+  min-height: 59px;
+  border: 2px solid $form-border;
+  border-radius: 1px;
+  margin-bottom: 29px;
+
+  &::-webkit-input-placeholder {
+    color: $basic-blue;
+  }
+
+  &::-moz-placeholder {
+    color: $basic-blue;
+    opacity: 1;
+  }
+}
+
+.form__contacts-phone,
+.form__contacts-email {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__wrapper {
+  background-color: $section-background;
+  padding-top: 42px;
+}
+
+.form__apps {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__apps-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.form__apps-item {
+  margin-bottom: 38px;
+}
+
+.form__review {
+  border: none;
+  margin: 40px 0 0 0;
+  padding: 0;
+}
+
+.form__review textarea {
+  width: 100%;
+  min-height: 197px;
+  resize: none;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $basic-blue;
+  padding-left: 20px;
+  padding-top: 22px;
+  box-sizing: border-box;
+}
+
+.form__send-button {
+  min-width: 276px;
+}
+
+.form__note {
+  text-transform: uppercase;
+}
+
+.form__note span {
+  color: $pink;
+}

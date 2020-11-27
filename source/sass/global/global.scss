@@ -21,3 +21,18 @@ img {
   padding-left: 20px;
   padding-right: 20px;
 }
+
+.button {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: $white;
+  background-color: $send-button;
+  display: block;
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 2px solid $send-button;
+  border-radius: 2px;
+  min-width: 276px;
+}

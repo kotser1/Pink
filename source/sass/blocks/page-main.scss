@@ -1,0 +1,22 @@
+.page-main {
+  &__header {
+    min-height: 237px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1d2631;
+    background-image: url("../img/back-mobile.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    color: #ffffff;
+    padding-top: 36px;
+    padding-bottom: 51px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 33px;
+    text-align: center;
+  }
+}
