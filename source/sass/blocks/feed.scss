@@ -1,0 +1,19 @@
+.feed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item-wrapper {
+    background-color: $section-background;
+  }
+
+  &__item {
+    margin-top: 20px;
+  }
+}
