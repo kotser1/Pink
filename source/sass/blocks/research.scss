@@ -1,11 +1,49 @@
 .research {
   background-color: $white;
   padding-bottom: 100px;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.research__container {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .research__wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
+  // padding-left: 20px;
+  // padding-right: 20px;
+  width: 311px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    width: 534px;
+    margin-right: 28px;
+  }
+}
+
+.research__wrapper::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/effect24.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 238px;
+  height: 276px;
+  top: 21px;
+  left: -309px;
+
+  @media (min-width: $desktop-width) {
+    width: 298px;
+    height: 345px;
+    top: 40px;
+    left: -370px;
+  }
 }
 
 .research__title {
@@ -13,12 +51,30 @@
   font-weight: 700;
   line-height: 36px;
   color: $black;
+  margin: 0;
+  margin-top: 62px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 131px;
+  }
+}
+
+.research__title br {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .research__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 23px;
+  }
 }
 
 .research__link {
@@ -26,4 +82,10 @@
   font-weight: 400;
   line-height: 24px;
   color: $pink;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 12px;
+  }
 }
