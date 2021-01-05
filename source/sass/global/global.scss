@@ -27,6 +27,8 @@ img {
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
