@@ -166,11 +166,15 @@
     width: 660px;
     height: 545px;
     top: 73px;
-    left: 124px;
+    left: -20px;
+    max-width: 660px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 308px;
-    left: 418px;
+    width: 940px;
+    height: 645px;
+    top: 208px;
+    left: 10px;
+    max-width: 100%;
   }
 }

@@ -47,7 +47,11 @@
           <div class="download__wrapper">
             <h2 class="visually-hidden">Где можно скачать наше приложение</h2>
             <p class="download__title">Взгляните на жизнь<br>иначе!</p>
-            <img class="download__main-pic" src="img/phone-and-screen-mobile.png" width="320" height="287" alt="Телефон в руке с активным приложением Pink">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/phone-and-screen-desktop.png">
+              <source media="(min-width: 660px)" srcset="img/phone-and-screen-tablet.png">
+              <img class="download__main-pic" src="img/phone-and-screen-mobile.png" width="320" height="287" alt="Телефон в руке с активным приложением Pink">
+            </picture>
             <div class="download__info">
               <a class="download__button" href="#">Скачать приложение</a>
               <ul class="download__markets-list">
@@ -92,7 +96,8 @@
               </li>
             </ul>
             <picture>
-              <source media="(min-width: 660px)" srcset="img/advantages-phone3-tablet.png" class="download__main-pic">
+              <!-- <source media="(min-width: 660px)" srcset="img/advantages-phone3-tablet.png" class="download__main-pic"> -->
+              <source media="(min-width: 660px)" srcset="img/advantages-phone3-tablet.png">
               <img class="advantages__big-picture" src="img/advantages-big-picture-mobile-2.png" width="157" height="277" alt="Скриншот приложения Pink с изображением смайлика и надписью 'Всем привет!' ">
             </picture>
           </div>
