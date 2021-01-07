@@ -8,6 +8,11 @@
   align-items: center;
   row-gap: 20px;
   padding-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__logo {

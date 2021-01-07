@@ -22,6 +22,19 @@
   padding: 14px 20px 14px 20px;
 }
 
+.table__cell--not-mobile {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.table__cell--hidden {
+  border: none;
+  background-color: $section-background;
+}
+
 .table__cell-title {
   font-size: 16px;
   font-weight: 700;
@@ -36,9 +49,4 @@
 .table__body {
   background-color: $white;
   text-transform: uppercase;
-}
-
-.table__cell--hidden {
-  border: none;
-  background-color: $section-background;
 }
