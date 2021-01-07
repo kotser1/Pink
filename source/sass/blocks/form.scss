@@ -1,10 +1,19 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
 .form legend {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   color: $pink;
   text-transform: uppercase;
+  text-align: center;
+  width: 100%;
   margin-bottom: 41px;
+  background-color: inherit;
+  box-sizing: border-box;
 }
 
 .form__person {
@@ -13,11 +22,27 @@
   padding: 0;
 }
 
+.form__person-surname,
+.form__person-name,
+.form__person-middlename {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 54px;
+  }
+}
+
 .form__person label {
   color: $pink;
   text-transform: uppercase;
   display: block;
+  margin: 0;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+    margin-bottom: 0;
+  }
 }
 
 .form__person-input {
@@ -27,6 +52,7 @@
   min-height: 59px;
   border: 2px solid $form-border;
   border-radius: 1px;
+  margin: 0;
   margin-bottom: 29px;
 
   &::-webkit-input-placeholder {
@@ -37,17 +63,28 @@
     color: $basic-blue;
     opacity: 1;
   }
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    margin-bottom: 0;
+  }
 }
 
 .form__achievements {
   border: none;
   margin: 0;
   padding: 0;
+  padding-bottom: 25px;
+  background-color: $section-background;
+}
+
+.form__achievements legend {
+  padding-top: 30px;
 }
 
 .form__achievements-list {
   list-style: none;
-  padding: 0;
+  padding: 0 20px 0 20px;
   margin: 0;
 }
 
@@ -55,10 +92,16 @@
   margin-bottom: 47px;
 }
 
+.form__achievements-item label {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
 .form__contacts {
   border: none;
   margin: 0;
-  padding: 40px 0 0 0;
+  padding: 35px 20px 26px 20px;
 }
 
 .form__contacts legend {
@@ -104,10 +147,16 @@
   border: none;
   margin: 0;
   padding: 0;
+  background-color: $section-background;
+  padding-bottom: 20px;
+}
+
+.form__apps legend {
+  padding-top: 40px;
 }
 
 .form__apps-list {
-  padding: 0;
+  padding: 0 20px 0 20px;
   margin: 0;
   list-style: none;
 }
@@ -116,15 +165,25 @@
   margin-bottom: 38px;
 }
 
+.form__apps-item label {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
 .form__review {
   border: none;
   margin: 40px 0 0 0;
   padding: 0;
 }
 
+.form__review legend {
+  margin-bottom: 14px;
+}
+
 .form__review textarea {
   width: 100%;
-  min-height: 197px;
+  min-height: 201px;
   resize: none;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
@@ -132,18 +191,50 @@
   line-height: 30px;
   color: $basic-blue;
   padding-left: 20px;
-  padding-top: 22px;
+  padding-top: 13px;
   box-sizing: border-box;
+  border: 2px solid $form-border;
 }
 
 .form__send-button {
   min-width: 276px;
+  margin-top: 40px;
+  text-transform: uppercase;
 }
 
 .form__note {
+  text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  margin-top: 33px;
 }
 
 .form__note span {
   color: $pink;
+}
+
+@media (min-width: $tablet-width) {
+  .form__person {
+    order: 0;
+  }
+
+  .form__achievements {
+    order: 3;
+  }
+
+  .form__apps {
+    order: 1;
+  }
+
+  .form__contacts {
+    order: 2;
+  }
+
+  .form__review {
+    order: 4;
+  }
+
+  .form__send {
+    order: 5;
+  }
 }
