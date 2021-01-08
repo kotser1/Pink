@@ -9,6 +9,7 @@
   @media (min-width: $desktop-width) {
     background-color: $header-background;
     position: absolute;
+    z-index: 1;
   }
 }
 

@@ -21,6 +21,10 @@
   padding-bottom: 18px;
   border-bottom: 1px solid $black;
   border-top: 1px solid $menu-item-border;
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
 }
 
 .main-nav__item a {

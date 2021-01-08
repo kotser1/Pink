@@ -1,6 +1,20 @@
 .form {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    width: $desktop-width;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, min-content);
+    justify-content: center;
+  }
 }
 
 .form legend {
@@ -20,6 +34,24 @@
   border: none;
   margin: 0;
   padding: 0;
+}
+
+.form__person-wrapper {
+  box-sizing: border-box;
+  width: $mobile-width;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .form__person-surname,
@@ -46,14 +78,16 @@
 }
 
 .form__person-input {
-  font-size: 18px;
   box-sizing: border-box;
-  padding: 17px 0 18px 24px;
+  width: 100%;
   min-height: 59px;
-  border: 2px solid $form-border;
-  border-radius: 1px;
+  padding: 17px 0 18px 24px;
   margin: 0;
   margin-bottom: 29px;
+  font-size: 18px;
+  border: 2px solid $form-border;
+  border-radius: 1px;
+
 
   &::-webkit-input-placeholder {
     color: $basic-blue;
@@ -76,6 +110,10 @@
   padding: 0;
   padding-bottom: 25px;
   background-color: $section-background;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
 }
 
 .form__achievements legend {
@@ -102,15 +140,30 @@
   border: none;
   margin: 0;
   padding: 35px 20px 26px 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 30px;
+  }
 }
 
 .form__contacts legend {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .form__contacts label {
   color: $pink;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin-bottom: 40px;
+  }
 }
 
 .form__contacts input {
@@ -129,6 +182,10 @@
   &::-moz-placeholder {
     color: $basic-blue;
     opacity: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -149,6 +206,10 @@
   padding: 0;
   background-color: $section-background;
   padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
 }
 
 .form__apps legend {
@@ -196,9 +257,18 @@
   border: 2px solid $form-border;
 }
 
+.form__send {
+  margin-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .form__send-button {
   min-width: 276px;
-  margin-top: 40px;
   text-transform: uppercase;
 }
 
@@ -207,6 +277,10 @@
   text-transform: uppercase;
   margin: 0;
   margin-top: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .form__note span {
@@ -236,5 +310,37 @@
 
   .form__send {
     order: 5;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__person {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  .form__apps {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+
+  .form__contacts {
+    grid-row: 2/3;
+    grid-column: 1 / -1;
+  }
+
+  .form__achievements {
+    grid-row: 3/4;
+    grid-column: 1 / -1;
+  }
+
+  .form__review {
+    grid-row: 4/5;
+    grid-column: 1 / -1;
+  }
+
+  .form__send {
+    grid-row: 5/6;
+    grid-column: 1 / -1;
   }
 }
