@@ -51,12 +51,24 @@ img {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  margin-top: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    justify-content: space-between;
+  }
 
   &__button {
     border: none;
     background-color: transparent;
     padding: 0;
-    margin-right: 18px;
+    margin-right: 19px;
+
+    @media (min-width: $tablet-width) {
+      order: 1;
+      margin-right: 0;
+      margin-left: 16px;
+    }
   }
 
   &__text {

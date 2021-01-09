@@ -7,13 +7,34 @@
     list-style: none;
     padding: 0;
     margin: 0;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
 
   &__item-wrapper {
     background-color: $section-background;
+    min-height: 121px;
+    padding: 17px 0 18px 17px;
+    box-sizing: border-box;
+
+    @media (min-width: $tablet-width) {
+      min-height: 155px;
+    }
   }
 
   &__item {
     margin-top: 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 300px;
+    }
+  }
+
+  &__item-image {
+    display: block;
   }
 }
