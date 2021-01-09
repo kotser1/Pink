@@ -25,11 +25,23 @@
     font-weight: 400;
     line-height: 30px;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      font-size: 18px;
+    }
   }
 
   &__slogan--top {
-    padding-top: 54px;
-    padding-bottom: 60px;
+    padding-top: 44px;
+    padding-bottom: 50px;
+    width: 250px;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      width: 550px;
+      padding-top: 91px;
+      padding-bottom: 77px;
+    }
   }
 
   &__slogan--bottom {
