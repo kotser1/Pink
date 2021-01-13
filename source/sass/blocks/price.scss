@@ -1,16 +1,44 @@
 .price {
-  background-color: $section-background;
-  padding-bottom: 49px;
-  padding-top: 90px;
+  padding-bottom: 46px;
+  padding-top: 42px;
+  background-color: #ffffff;
+  background-image: linear-gradient(176deg, #ffffff 10%, #f2f2f2 10%, #f2f2f2 100%);
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(176deg, #ffffff 12.5%, #f2f2f2 12.5%, #f2f2f2 100%);
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(175deg, #ffffff 16.5%, #f2f2f2 16.5%, #f2f2f2 100%);
+    padding-bottom: 97px;
+  }
 }
 
 .price__wrapper {
-  overflow-x: auto;
+  padding-top: 90px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 113px;
+  }
 }
 
 .price__toggles {
-  text-align: center;
-  padding-top: 45px;
+  // text-align: center;
+  padding-top: 39px;
+  width: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .price__toggle {
@@ -20,7 +48,12 @@
   border-radius: 50%;
   border: none;
   padding: 0;
-  margin-right: 20px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.price__toggle:last-child {
+  margin-right: 0;
 }
 
 .price__toggle--current {

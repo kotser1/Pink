@@ -25,6 +25,12 @@
   @media (min-width: $desktop-width) {
     border: none;
   }
+
+  &--current {
+    @media (min-width: $desktop-width) {
+      border-bottom: 2px solid $white;
+    }
+  }
 }
 
 .main-nav__item a {
@@ -34,6 +40,15 @@
   text-decoration: none;
   color: $white;
   text-transform: uppercase;
+
+  &:hover {
+    color: $pink;
+  }
+
+  &:active {
+    color: $white;
+    opacity: 0.3;
+  }
 }
 
 .main-nav__toggle {
@@ -80,7 +95,7 @@
 
 @media (min-width: $tablet-width) {
   .main-nav__toggle {
-    top: -70px;
+    top: -67px;
   }
 }
 
@@ -88,6 +103,7 @@
   .main-nav {
     display: flex;
     align-items: center;
+    z-index: 1;
   }
 
   .main-nav__wrapper {

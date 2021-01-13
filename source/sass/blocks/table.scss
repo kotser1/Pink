@@ -1,52 +1,215 @@
 .table {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 30px;
   border-collapse: collapse;
-  margin: 0 auto;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  min-width: 840px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 623px;
+    text-transform: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 945px;
+  }
+}
+
+.table__body {
+  background-color: $white;
+  text-transform: uppercase;
+}
+
+.table__row {
+  height: 61px;
+
+  @media (min-width: $tablet-width) {
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 60px;
+  }
+}
+
+.table__row:first-child {
+  height: 99px;
+
+  @media (min-width: $tablet-width) {
+    height: 81px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 100px;
+  }
 }
 
 .table__head {
+  width: 276px;
+  border: 2px solid $table-border;
   background-color: $basic-blue;
   color: $white;
   text-transform: uppercase;
   text-align: center;
-}
+  position: relative;
+  overflow: hidden;
 
-.table__head td {
-  padding: 10px 20px 10px 20px;
+  @media (min-width: $tablet-width) {
+    width: 151px;
+    text-transform: uppercase;
+    padding-top: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 232px;
+    padding-top: 12px;
+  }
 }
 
 .table__cell {
+  position: relative;
   border: 2px solid $table-border;
-  padding: 14px 20px 14px 20px;
 }
 
 .table__cell--not-mobile {
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: table-cell;
   }
 }
 
 .table__cell--hidden {
   border: none;
-  background-color: $section-background;
+  display: none;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    display: table-cell;
+    background-color: $section-background;
+  }
+}
+
+.table__cell--sticker::before {
+  position: absolute;
+  content: "ХИТ";
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: $white;
+  width: 120px;
+  height: 23px;
+  text-align: center;
+  padding: 0;
+  padding-top: 5px;
+  background-color: $pink;
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+  top: 18px;
+  left: -33px;
+
+  @media (min-width: $tablet-width) {
+    height: 19px;
+    padding-top: 2px;
+    top: 15px;
+    left: -40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 24px;
+    padding-top: 5px;
+    top: 18px;
+    left: -32px;
+  }
 }
 
 .table__cell-title {
   font-size: 16px;
   font-weight: 700;
-  margin: 0;
+  margin: -16px 0 3px 0;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    margin-bottom: 7px;
+  }
 }
 
 .table__cell-cost {
   font-size: 18px;
+  font-weight: 300;
   margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
 }
 
-.table__body {
-  background-color: $white;
-  text-transform: uppercase;
+.table__cell-text {
+  display: block;
+  font-size: 14px;
+  line-height: 30px;
+  padding-left: 20px;
+
+  &--mobile {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--not-mobile {
+    @media (min-width: $tablet-width) {
+      text-transform: none;
+      padding-left: 17px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 18px;
+      padding-left: 22px;
+    }
+  }
+}
+
+.table__cell-icon {
+  position: absolute;
+
+  @media (min-width: $tablet-width) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &--yes {
+    width: 31px;
+    height: 21px;
+    background-image: url("../img/yes.svg");
+    top: 18px;
+    right: 17px;
+
+    @media (min-width: $tablet-width) {
+      top: 21px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 28px;
+    }
+  }
+
+  &--no {
+    width: 27px;
+    height: 27px;
+    background-image: url("../img/no.svg");
+    top: 16px;
+    right: 18px;
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 29px;
+      margin-left: 1px;
+    }
+  }
 }
