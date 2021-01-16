@@ -96,10 +96,10 @@
   }
 }
 
-.apps__input:hover + label::before{
+.apps__input:hover + label::before {
   border: 2px solid $basic-blue;
 }
 
-.apps__input:active + label::before{
+.apps__input:active + label::before {
   border: 2px solid $pink;
 }
