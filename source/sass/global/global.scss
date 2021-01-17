@@ -40,11 +40,25 @@ img {
   background-color: $send-button;
   display: block;
   box-sizing: border-box;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 17px;
+  padding-bottom: 18px;
   border: 2px solid $send-button;
-  border-radius: 2px;
-  min-width: 276px;
+  border-radius: 3px;
+  min-width: 280px;
+
+  &:hover {
+    background-color: $send-button-hover;
+  }
+
+  &:active {
+    background-color: $send-button-hover;
+    color: $send-button-active;
+  }
+
+  &:disabled {
+    background-color: $basic-gray;
+    border: 2px solid $basic-gray;
+  }
 }
 
 .like {
@@ -63,11 +77,13 @@ img {
     background-color: transparent;
     padding: 0;
     margin-right: 19px;
+    margin-top: 0;
 
     @media (min-width: $tablet-width) {
       order: 1;
       margin-right: 0;
       margin-left: 16px;
+      margin-top: 3px;
     }
   }
 
@@ -78,5 +94,9 @@ img {
     line-height: 24px;
     color: $pink;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 2px;
+    }
   }
 }

@@ -1,0 +1,134 @@
+.achievements {
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: $section-background;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+    margin-top: 58px;
+    padding-bottom: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 230px;
+    margin-top: 57px;
+  }
+}
+
+.achievements legend {
+  padding-top: 39px;
+  margin: 0 auto 38px auto;
+
+  @media (min-width: $tablet-width) {
+    width: 440px;
+    padding-top: 0;
+    margin-bottom: 44px;
+  }
+}
+
+.achievements__br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.achievements__list {
+  list-style: none;
+  padding: 0 20px 0 20px;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 315px 295px 295px;
+    padding: 0;
+    padding-left: 20px;
+  }
+}
+
+.achievements__item {
+  margin-bottom: 48px;
+  padding-left: 59px;
+  padding-top: 4px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 97px;
+  }
+}
+
+.achievements__item:last-child {
+  margin-bottom: 47px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.achievements__item label {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.achievements__input + label::before {
+  content: "";
+  position: absolute;
+  left: -59px;
+  top: -4px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid $checkbox-border;
+  border-radius: 2px;
+}
+
+.achievements__input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -50px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/checked-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.achievements__input:hover + label::before {
+  border: 2px solid $basic-blue;
+}
+
+.achievements__input:active + label::before {
+  border: 2px solid $pink;
+}
+
+@media (min-width: $desktop-width) {
+  .achievements__item:nth-child(1) {
+    order: 1;
+  }
+
+  .achievements__item:nth-child(2) {
+    order: 4;
+  }
+
+  .achievements__item:nth-child(3) {
+    order: 2;
+  }
+
+  .achievements__item:nth-child(4) {
+    order: 5;
+  }
+
+  .achievements__item:nth-child(5) {
+    order: 3;
+  }
+
+  .achievements__item:nth-child(6) {
+    order: 6;
+  }
+}

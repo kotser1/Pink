@@ -44,9 +44,22 @@
       padding-top: 91px;
       padding-bottom: 77px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 600px;
+      padding-bottom: 89px;
+    }
   }
 
   &__slogan--bottom {
-    padding-top: 49px;
+    margin: 40px auto 42px auto;
+
+    @media (min-width: $tablet-width) {
+      margin: 64px auto 70px auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 24px auto 67px auto;
+    }
   }
 }

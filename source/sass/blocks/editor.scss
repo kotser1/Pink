@@ -3,15 +3,42 @@
   flex-direction: column;
   align-items: center;
   background-color: $section-background;
+  height: 757px;
   padding-top: 20px;
   padding-bottom: 41px;
   box-sizing: border-box;
 
+  @media (min-width: $tablet-width) {
+    height: 511px;
+    padding-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    height: 514px;
+    margin: 0 auto 28px auto;
+  }
+
   &__wrapper {
+    width: 100%;
+    margin: 0 auto;
+
     @media (min-width: $tablet-width) {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      width: 620px;
+      grid-template-columns: 345px 275px;
       grid-template-rows: min-content min-content;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 800px;
+      box-sizing: border-box;
+      grid-template-columns: 390px 410px;
+      padding: 0;
+      margin-left: 80px;
+      margin-right: 60px;
     }
   }
 
@@ -19,6 +46,17 @@
     @media (min-width: $tablet-width) {
       grid-row: 1/-1;
       grid-column: 1/2;
+    }
+  }
+
+  &__image {
+    display: block;
+    padding: 0 20px 42px 20px;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      padding: 17px 0 0 0;
+      margin-left: 0;
     }
   }
 
@@ -33,43 +71,98 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 20px;
+    row-gap: 12px;
 
     @media (min-width: $tablet-width) {
       grid-column: 2/3;
       grid-row: 2/3;
+      align-items: flex-start;
+      justify-content: space-between;
+      row-gap: 0;
+      margin-top: 42px;
+      margin-left: 2px;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      margin-top: 146px;
+      margin-left: 0;
     }
   }
 
   &__button-send {
     display: flex;
     justify-content: center;
-    min-width: 280px;
+    width: 280px;
     color: $pink;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 18px;
     text-decoration: none;
     border: 3px solid $pink;
     border-radius: 30px;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    min-height: 55px;
+    padding-top: 15px;
+    padding-bottom: 10px;
     box-sizing: border-box;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      width: 260px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 183px;
+    }
+
+    &:hover {
+      color: $white;
+      background-color: $pink;
+    }
+
+    &:active {
+      background-color: $pink;
+      color: $send-button-active;
+    }
   }
 
   &__button-cancel {
     display: flex;
     justify-content: center;
-    min-width: 280px;
+    width: 280px;
     color: $blue-opacity;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 18px;
     text-decoration: none;
     border: 3px solid $blue-opacity;
     border-radius: 30px;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    min-height: 55px;
+    padding-top: 15px;
+    padding-bottom: 10px;
     box-sizing: border-box;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      width: 260px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 183px;
+    }
+
+    &:hover {
+      color: $cancel-button-hover;
+      border-color: $cancel-button-hover;
+    }
+
+    &:active {
+      background-color: $basic-blue;
+      border-color: $cancel-button-hover;
+      color: $send-button-active;
+      opacity: 0.3;
+    }
   }
 }

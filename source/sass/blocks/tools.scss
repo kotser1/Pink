@@ -1,0 +1,219 @@
+.tools {
+  &__button {
+    border: 0;
+    padding: 0;
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+  }
+
+  &__buttons-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 206px;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.tools__filters-wrapper {
+  border-bottom: 1px solid $blue-opacity;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    border-bottom: 0;
+  }
+}
+
+.tools__filter {
+  display: none;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 275px;
+    border-bottom: 1px solid $blue-opacity;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}
+
+.tools__filter--current {
+  display: block;
+}
+
+.tools__control {
+  position: relative;
+  height: 36px;
+  padding-top: 36px;
+  padding-right: 40px;
+  padding-left: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 18px;
+    padding-left: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 30px;
+    padding-left: 92px;
+  }
+
+  &--contrast {
+    @media (min-width: $tablet-width) {
+      padding-top: 33px;
+      position: relative;
+    }
+  }
+
+  &--contrast::before {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 16px;
+      top: 26px;
+      left: 7px;
+      background-image: url("../img/tool-contrast.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 32px;
+      height: 32px;
+      top: 18px;
+      left: 6px;
+    }
+  }
+
+  &--crop {
+    @media (min-width: $tablet-width) {
+      position: relative;
+    }
+  }
+
+  &--crop::before {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      content: "";
+      width: 22px;
+      height: 22px;
+      top: 26px;
+      left: 4px;
+      background-image: url("../img/tool-crop.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 44px;
+      height: 44px;
+      top: 15px;
+      left: 0;
+    }
+  }
+
+  &--fill {
+    @media (min-width: $tablet-width) {
+      position: relative;
+    }
+  }
+
+  &--fill::before {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      content: "";
+      width: 24px;
+      height: 22px;
+      top: 27px;
+      left: 3px;
+      background-image: url("../img/tool-fill.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 48px;
+      height: 43px;
+      top: 15px;
+      left: 0;
+    }
+  }
+}
+
+.tools__scale {
+  height: 2px;
+  background-color: $basic-blue;
+}
+
+.tools__toggle {
+  position: absolute;
+  top: 31px;
+  left: 233px;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: 2px solid $pink;
+  background-color: $white;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $pink;
+  }
+
+  &--crop {
+    left: 233px;
+
+    @media (min-width: $tablet-width) {
+      left: 201px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 161px;
+      top: 30px;
+    }
+  }
+
+  &--fill {
+    left: 233px;
+
+    @media (min-width: $tablet-width) {
+      left: 80px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 339px;
+      top: 30px;
+    }
+  }
+
+  &--contrast {
+    left: 233px;
+
+    @media (min-width: $tablet-width) {
+      left: 151px;
+      top: 28px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 252px;
+      top: 27px;
+    }
+  }
+}
