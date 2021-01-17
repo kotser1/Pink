@@ -1,13 +1,45 @@
 .top-photo {
   box-sizing: border-box;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 30px;
   }
 
+  &::before {
+    position: absolute;
+    content: "ПАНОРАМА ДНЯ";
+    top: 0;
+    right: 20px;
+    width: 140px;
+    height: 36px;
+    background-color: $pink;
+    color: $white;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 6px;
+    box-sizing: border-box;
+
+    @media (min-width: $tablet-width) {
+      top: 57px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 54px;
+      right: 130px;
+    }
+  }
+
   &__image {
     width: 100%;
     display: block;
+  }
+
+  &__info {
+    @media (min-width: $desktop-width) {
+      padding-top: 1px;
+    }
   }
 
   &__author {
@@ -37,7 +69,7 @@
     margin: 0 auto;
     margin-left: 20px;
     margin-right: 20px;
-    padding: 18px 10px 19px 17px;
+    padding: 18px 10px 18px 17px;
     background-color: $section-background;
 
     @media (min-width: $tablet-width) {
@@ -46,11 +78,52 @@
       flex-wrap: wrap;
       margin: 0 auto;
       justify-content: space-between;
-      padding: 23px 30px 25px 30px;
+      padding: 23px 30px 24px 30px;
     }
 
     @media (min-width: $desktop-width) {
       width: 940px;
+      padding: 23px 31px 23px 27px;
+    }
+  }
+
+  &__like {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 11px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 0;
+      justify-content: space-between;
+    }
+  }
+
+  &__like-button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin-right: 19px;
+    margin-top: 0;
+
+    @media (min-width: $tablet-width) {
+      order: 1;
+      margin-right: 0;
+      margin-left: 16px;
+      margin-top: 3px;
+    }
+  }
+
+  &__like-text {
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $pink;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 2px;
     }
   }
 }

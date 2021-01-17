@@ -77,11 +77,13 @@ img {
     background-color: transparent;
     padding: 0;
     margin-right: 19px;
+    margin-top: 0;
 
     @media (min-width: $tablet-width) {
       order: 1;
       margin-right: 0;
       margin-left: 16px;
+      margin-top: 3px;
     }
   }
 
@@ -92,5 +94,9 @@ img {
     line-height: 24px;
     color: $pink;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 2px;
+    }
   }
 }
