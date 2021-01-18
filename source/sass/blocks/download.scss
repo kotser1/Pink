@@ -1,16 +1,28 @@
 .download {
   background-color: $intro-background;
-  background-image: url("../img/back-tablet.png");
+  background-image: url("../img/back-tablet.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-tablet@2x.jpg");
+  }
+
   @media (max-width: $mobile-width) {
-    background-image: url("../img/back-mobile.png");
+    background-image: url("../img/back-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-mobile@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/back-desktop.png");
+    background-image: url("../img/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
   }
 }
 
