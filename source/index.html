@@ -76,6 +76,10 @@
             <h2 class="visually-hidden">Где можно скачать наше приложение</h2>
             <p class="download__title">Взгляните на жизнь<br>иначе!</p>
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/phone-and-screen-desktop.webp 1x, img/phone-and-screen-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/phone-and-screen-tablet.webp 1x, img/phone-and-screen-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/phone-and-screen-mobile.webp 1x, img/phone-and-screen-mobile@2x.webp 2x">
+
               <source media="(min-width: 960px)" srcset="img/phone-and-screen-desktop.png 1x, img/phone-and-screen-desktop@2x.png 2x">
               <source media="(min-width: 660px)" srcset="img/phone-and-screen-tablet.png 1x, img/phone-and-screen-tablet@2x.png 2x">
               <img class="download__main-pic" src="img/phone-and-screen-mobile.png" srcset="img/phone-and-screen-mobile@2x.png 2x" alt="Телефон в руке с активным приложением Pink">
@@ -108,22 +112,33 @@
           <div class="advantages__wrapper">
             <ul class="advantages__list">
               <li class="advantages__item">
-                <img class="advantages__image advantages__image--hidden" src="img/advantages-phone1.png" srcset="img/advantages-phone1@2x.png 2x" alt="1-й скриншот приложения">
+                <picture>
+                  <source type="image/webp" srcset="img/advantages-phone1.webp 1x, img/advantages-phone1@2x.webp 2x">
+                  <img class="advantages__image advantages__image--hidden" src="img/advantages-phone1.png" srcset="img/advantages-phone1@2x.png 2x" alt="1-й скриншот приложения">
+                </picture>
                 <h3 class="advantages__subtitle">Поднимает настроение</h3>
                 <p class="advantages__desc">Приложение позволит вам победить осеннюю хандру<br class="advantages__br-desktop"> и депрессию буквально в несколько кликов!</p>
               </li>
               <li class="advantages__item">
-                <img class="advantages__image advantages__image--hidden" src="img/advantages-phone2.png" srcset="img/advantages-phone2@2x.png 2x" alt="2-й скриншот приложения">
+                <picture>
+                  <source type="image/webp" srcset="img/advantages-phone2.webp 1x, img/advantages-phone2@2x.webp 2x">
+                  <img class="advantages__image advantages__image--hidden" src="img/advantages-phone2.png" srcset="img/advantages-phone2@2x.png 2x" alt="2-й скриншот приложения">
+                </picture>
                 <h3 class="advantages__subtitle">Меняет мир вокруг</h3>
                 <p class="advantages__desc">Сделайте снимок и<br class="advantages__br-desktop"> украсьте его смайликом<br class="advantages__br-desktop"> или текстовой подписью,<br class="advantages__br-desktop"> чтобы<br class="advantages__br-tablet"> усилить эффект</p>
               </li>
               <li class="advantages__item">
-                <img class="advantages__image" src="img/advantages-phone3.png" srcset="img/advantages-phone3@2x.png 2x" alt="3-й скриншот приложения">
+                <picture>
+                  <source type="image/webp" srcset="img/advantages-phone3.webp 1x, img/advantages-phone3@2x.webp 2x">
+                  <img class="advantages__image" src="img/advantages-phone3.png" srcset="img/advantages-phone3@2x.png 2x" alt="3-й скриншот приложения">
+                </picture>
                 <h3 class="advantages__subtitle">Заводит новых&nbsp;друзей</h3>
                 <p class="advantages__desc">Ставьте лайки,<br class="advantages__br-desktop"> комментируйте, делитесь<br class="advantages__br-desktop"> фотографиями с друзьями<br class="advantages__br-desktop"> и заводите новых</p>
               </li>
             </ul>
             <picture>
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/advantages-big-picture-tablet.webp 1x, img/advantages-big-picture-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/advantages-big-picture-mobile.webp 1x, img/advantages-big-picture-mobile@2x.webp 2x">
               <source media="(min-width: 660px)" srcset="img/advantages-big-picture-tablet.png 1x, img/advantages-big-picture-tablet@2x.png 2x">
               <img class="advantages__big-picture" src="img/advantages-big-picture-mobile.png" srcset="img/advantages-big-picture-mobile@2x.png 2x" alt="Скриншот приложения Pink с изображением смайлика и надписью 'Всем привет!' ">
             </picture>
