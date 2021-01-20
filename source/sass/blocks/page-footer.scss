@@ -52,6 +52,17 @@
 }
 
 .page-footer__logo {
+  fill: $basic-blue;
+
+  &:hover {
+    fill: $pink;
+  }
+
+  &:active {
+    fill: $basic-blue;
+    opacity: 0.3;
+  }
+
   &--mobile {
     display: block;
 

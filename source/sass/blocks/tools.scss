@@ -7,6 +7,25 @@
     &:not(:last-child) {
       margin-right: 35px;
     }
+
+    svg {
+      fill: $basic-blue;
+      opacity: 0.3;
+    }
+
+    &:hover svg {
+      opacity: 0.5;
+    }
+
+    &--current svg {
+      opacity: 1;
+      fill: $pink;
+    }
+
+    &--current:hover svg {
+      opacity: 1;
+      fill: $pink;
+    }
   }
 
   &__buttons-wrapper {

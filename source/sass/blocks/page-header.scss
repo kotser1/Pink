@@ -27,6 +27,16 @@
 .page-header__logo {
   // height: 23px;
   padding-left: 20px;
+  fill: $white;
+
+  &:hover {
+    fill: $pink;
+  }
+
+  &:active {
+    fill: $white;
+    opacity: 0.3;
+  }
 
   &--mobile {
     padding-top: 23px;
@@ -71,15 +81,6 @@
 
   @media (min-width: $desktop-width) {
     min-height: 110px;
-  }
-
-  &:hover path {
-    fill: $pink;
-  }
-
-  &:active path {
-    fill: $white;
-    opacity: 0.3;
   }
 }
 
