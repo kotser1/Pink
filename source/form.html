@@ -113,12 +113,12 @@
               <legend>Контактная информация</legend>
               <div class="form__contacts-wrapper">
                 <div class="form__contacts-phone">
-                  <label>Номер телефона</label>
-                  <input type="text" name="" placeholder="Номер, пожалуйста">
+                  <label for="form-telephone">Номер телефона</label>
+                  <input type="tel" pattern="^[0-9]+$" id="form-telephone" placeholder="Номер, пожалуйста">
                 </div>
                 <div class="form__contacts-email">
-                  <label>Адрес почты</label>
-                  <input type="text" name="" placeholder="Введите почту *">
+                  <label for="form-email">Адрес почты</label>
+                  <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="form-email" placeholder="Введите почту *">
                 </div>
               </div>
             </fieldset>
