@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Пинк</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
@@ -114,11 +115,11 @@
               <div class="form__contacts-wrapper">
                 <div class="form__contacts-phone">
                   <label for="form-telephone">Номер телефона</label>
-                  <input type="tel" pattern="^[0-9]+$" id="form-telephone" placeholder="Номер, пожалуйста">
+                  <input type="tel" id="form-telephone" name="telephone" pattern="[0-9]{10,15}" placeholder="Номер, пожалуйста">
                 </div>
                 <div class="form__contacts-email">
                   <label for="form-email">Адрес почты</label>
-                  <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="form-email" placeholder="Введите почту *">
+                  <input type="email" id="form-email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Введите почту *" required>
                 </div>
               </div>
             </fieldset>
