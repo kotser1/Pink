@@ -1,11 +1,10 @@
 .advantages {
   font-family: inherit;
-  // background-color: $section-background;
   background-color: $white;
   background-image: linear-gradient(175deg, $white 24%, $section-background 24%, $section-background 100%);
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(175deg, $white 37%, $section-background 37%, $section-background 100%);
+    background-image: linear-gradient(175.4deg, $white 37.4%, $section-background 37.4%, $section-background 100%);
   }
 
   @media (min-width: $desktop-width) {
@@ -24,7 +23,7 @@
   @media (min-width: $tablet-width) {
     font-size: 40px;
     line-height: 54px;
-    padding-top: 46px;
+    padding-top: 47px;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,7 +39,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
-    padding-bottom: 36px;
+    padding-bottom: 35px;
   }
 }
 
@@ -53,10 +52,6 @@
 }
 
 .advantages__wrapper {
-  // display: grid;
-  // grid-template-rows: min-content min-content;
-  // justify-content: center;
-  // justify-items: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,7 +86,7 @@
     height: 570px;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 21px;
+    margin-top: 22px;
   }
 }
 
@@ -99,7 +94,7 @@
   margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 35px;
+    margin-bottom: 34px;
   }
 
   @media (min-width: $desktop-width) {

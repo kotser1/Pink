@@ -2,7 +2,7 @@
   background-color: $intro-background;
   background-image: url("../img/back-tablet.jpg");
   background-repeat: no-repeat;
-  background-position: top -111px center;
+  background-position: top 0 center;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
@@ -11,7 +11,7 @@
 
   @media (max-width: $mobile-width) {
     background-image: url("../img/back-mobile.jpg");
-    background-position: top -67px center;
+    background-position: top 0 center;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-mobile@2x.jpg");
@@ -51,10 +51,10 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-height: 170px;
+  min-height: 237px;
 
   @media (min-width: $tablet-width) {
-    min-height: 329px;
+    min-height: 440px;
     justify-content: center;
   }
 
@@ -71,12 +71,12 @@
   text-align: center;
   color: $white;
   margin: 0;
-  margin-top: 27px;
+  margin-top: 94px;
 
   @media (min-width: $tablet-width) {
     font-size: 50px;
     line-height: 68px;
-    margin-top: 8px;
+    margin-top: 118px;
   }
 
   @media (min-width: $desktop-width) {
@@ -86,7 +86,7 @@
 
 .intro__title--catalog {
   @media (min-width: $tablet-width) {
-    margin-top: -64px;
+    margin-top: 48px;
   }
 
   @media (min-width: $desktop-width) {

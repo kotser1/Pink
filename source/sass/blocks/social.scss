@@ -1,9 +1,9 @@
 .social__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   row-gap: 5px;
-  width: 184px;
+  width: 180px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -42,5 +42,9 @@
   &:active {
     border: 3px solid $blue-opacity;
     opacity: 0.3;
+  }
+
+  &--youtube svg {
+    margin-left: 6px;
   }
 }
