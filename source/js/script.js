@@ -17,4 +17,3 @@ menuToggle.addEventListener('click', function() {
     pageHeader.classList.add('page-header--closed');
   }
 })
-
