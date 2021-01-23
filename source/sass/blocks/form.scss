@@ -141,6 +141,11 @@
   &:active {
     border: 2px solid $pink;
   }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $pink;
+  }
 }
 
 .form__contacts {
@@ -226,6 +231,11 @@
   }
 
   &:active {
+    border: 2px solid $pink;
+  }
+
+  &:focus {
+    outline: none;
     border: 2px solid $pink;
   }
 }
@@ -376,6 +386,15 @@
 
   @media (min-width: $desktop-width) {
     min-height: 128px;
+  }
+
+  &:hover {
+    border: 2px solid $basic-blue;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $pink;
   }
 }
 
