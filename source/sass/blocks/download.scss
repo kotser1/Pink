@@ -79,12 +79,10 @@
   @media (min-width: $tablet-width) {
     width: 240px;
     padding-left: 30px;
-    // padding-top: 111px;
     padding-top: 204px;
     padding-bottom: 0;
     font-size: 40px;
     line-height: 48px;
-    z-index: 1;
   }
 
   @media (min-width: $desktop-width) {

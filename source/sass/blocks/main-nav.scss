@@ -43,6 +43,17 @@
         display: none;
       }
 
+      &:hover::before {
+        background-color: $pink;
+        box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 $pink;
+      }
+
+      &:active::before {
+        background-color: $pink;
+        box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 $pink;
+        opacity: 0.3;
+      }
+
       @media (min-width: $tablet-width) {
         top: -67px;
       }
@@ -96,8 +107,12 @@
   }
 
   &:active {
-    color: $white;
+    color: $pink;
     opacity: 0.3;
+
+    @media (min-width: $desktop-width) {
+      color: $white;
+    }
   }
 }
 
@@ -132,6 +147,17 @@
     transform: rotate(-45deg);
     right: 0;
     top: 10px;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: $pink;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: $pink;
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
