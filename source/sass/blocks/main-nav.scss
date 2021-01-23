@@ -1,9 +1,67 @@
 .main-nav {
   position: relative;
+
+  &--nojs {
+    .main-nav__toggle {
+      display: none;
+    }
+  }
+
+  &--closed {
+    .main-nav__wrapper {
+      display: none;
+
+      @media (min-width: $desktop-width) {
+        display: block;
+      }
+    }
+
+    .main-nav__toggle {
+      position: absolute;
+      width: 50px;
+      height: 24px;
+      top: -45px;
+      right: 0;
+      margin-right: 17px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 50px;
+        height: 4px;
+        top: 0;
+        right: 3px;
+        background-color: $white;
+        transform: none;
+        box-shadow: 0 10px 0 0 $white, 0 20px 0 0 $white;
+      }
+
+      &::after {
+        display: none;
+      }
+
+      &:hover::before {
+        background-color: $pink;
+        box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 $pink;
+      }
+
+      &:active::before {
+        background-color: $pink;
+        box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 $pink;
+        opacity: 0.3;
+      }
+
+      @media (min-width: $tablet-width) {
+        top: -67px;
+      }
+    }
+  }
 }
 
 .main-nav__wrapper {
-  // width: $mobile-width;
   margin: 0 auto;
   background-color: $basic-blue;
 }
@@ -49,8 +107,12 @@
   }
 
   &:active {
-    color: $white;
+    color: $pink;
     opacity: 0.3;
+
+    @media (min-width: $desktop-width) {
+      color: $white;
+    }
   }
 }
 
@@ -86,18 +148,19 @@
     right: 0;
     top: 10px;
   }
-}
 
-// @media (min-width: $tablet-width) {
-//   .main-nav__wrapper {
-//     display: flex;
-//     justify-content: space-between;
-//     // margin: 0 auto;
-//   }
-// }
+  &:hover::before,
+  &:hover::after {
+    background-color: $pink;
+  }
 
-@media (min-width: $tablet-width) {
-  .main-nav__toggle {
+  &:active::before,
+  &:active::after {
+    background-color: $pink;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
     top: -67px;
   }
 }
@@ -112,7 +175,6 @@
   .main-nav__wrapper {
     display: flex;
     justify-content: space-between;
-    // width: 940px;
     margin: 0 auto;
     background-color: transparent;
   }

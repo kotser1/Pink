@@ -11,6 +11,7 @@
 
   @media (max-width: $mobile-width) {
     background-image: url("../img/back-mobile.jpg");
+    background-size: contain;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-mobile@2x.jpg");
@@ -48,13 +49,14 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-height: 666px;
+  min-height: 733px;
   position: relative;
   color: $white;
 
   @media (min-width: $tablet-width) {
-    min-height: 618px;
-    justify-content: center;
+    min-height: 729px;
+    // justify-content: center;
+    justify-content: flex-start;
     align-items: start;
   }
 
@@ -71,24 +73,23 @@
   line-height: 29px;
   text-align: center;
   margin: 0;
-  padding-top: 22px;
+  padding-top: 89px;
   padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     width: 240px;
     padding-left: 30px;
-    padding-top: 0;
+    padding-top: 204px;
     padding-bottom: 0;
     font-size: 40px;
     line-height: 48px;
-    z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 68px;
     padding-left: 40px;
-    padding-top: 210px;
+    padding-top: 209px;
   }
 }
 
@@ -109,7 +110,7 @@
   @media (min-width: $desktop-width) {
     height: 279px;
     justify-content: space-between;
-    margin-top: 35px;
+    margin-top: 36px;
     padding-left: 10px;
   }
 }
@@ -132,8 +133,8 @@
 
   @media (min-width: $tablet-width) {
     width: 300px;
-    margin-bottom: 48px;
     margin-top: 30px;
+    margin-bottom: 46px;
   }
 
   @media (min-width: $desktop-width) {
@@ -162,7 +163,7 @@
   margin-left: -5px;
 
   @media (min-width: $desktop-width) {
-    margin-top: 53px;
+    margin-top: 54px;
   }
 }
 
@@ -172,6 +173,17 @@
 
 .download__markets-item:last-child {
   margin-right: 0;
+  margin-top: 8px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.download__markets-item:first-child {
+  @media (min-width: $desktop-width) {
+    margin-top: -7px;
+  }
 }
 
 .download__description {
@@ -183,7 +195,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    padding-top: 24px;
+    padding-top: 25px;
     padding-bottom: 21px;
   }
 
@@ -199,7 +211,7 @@
     position: absolute;
     width: 660px;
     height: 545px;
-    top: 73px;
+    top: 184px;
     left: -20px;
     max-width: 660px;
   }
