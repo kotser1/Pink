@@ -29,7 +29,6 @@
 
 .download__container {
   box-sizing: border-box;
-  // width: $mobile-width;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -55,7 +54,6 @@
 
   @media (min-width: $tablet-width) {
     min-height: 729px;
-    // justify-content: center;
     justify-content: flex-start;
     align-items: start;
   }
@@ -120,7 +118,7 @@
   justify-content: center;
   align-items: center;
   width: 280px;
-  height: 55px;
+  min-height: 55px;
   box-sizing: border-box;
   border: 3px solid $white;
   border-radius: 29px;
@@ -130,6 +128,7 @@
   font-weight: 700;
   margin-bottom: 32px;
   margin-top: 28px;
+  padding: 5px 20px 5px 20px;
 
   @media (min-width: $tablet-width) {
     width: 300px;
