@@ -33,7 +33,6 @@
 .contacts__list {
   display: grid;
   grid-template-rows: min-content min-content min-content;
-  // width: 100%;
   margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
@@ -62,7 +61,6 @@
 
 .contacts__item:last-child {
   margin-top: 3px;
-  // margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     grid-row: 2 / 3;
