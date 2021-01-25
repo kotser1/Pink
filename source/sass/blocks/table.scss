@@ -64,30 +64,6 @@
     width: 232px;
     padding-top: 12px;
   }
-}
-
-.table__cell {
-  position: relative;
-  border: 2px solid $table-border;
-
-  &--not-mobile {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      display: table-cell;
-    }
-  }
-
-  &--hidden {
-    border: none;
-    display: none;
-    background-color: transparent;
-
-    @media (min-width: $tablet-width) {
-      display: table-cell;
-      background-color: $section-background;
-    }
-  }
 
   &--sticker::before {
     position: absolute;
@@ -120,6 +96,30 @@
       padding-top: 5px;
       top: 18px;
       left: -32px;
+    }
+  }
+}
+
+.table__cell {
+  position: relative;
+  border: 2px solid $table-border;
+
+  &--not-mobile {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: table-cell;
+    }
+  }
+
+  &--hidden {
+    border: none;
+    display: none;
+    background-color: transparent;
+
+    @media (min-width: $tablet-width) {
+      display: table-cell;
+      background-color: $section-background;
     }
   }
 }
