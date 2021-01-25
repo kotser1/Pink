@@ -104,6 +104,7 @@
   &--email {
     &:hover {
       color: $basic-blue;
+      text-decoration: underline;
     }
 
     &:active {
