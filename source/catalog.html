@@ -77,7 +77,7 @@
           </div>
           <p class="top-photo__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите&nbsp;прямую трансляцию в перископе, задавайте свои вопросы!</p>
           <div class="top-photo__like">
-            <button class="top-photo__like-button">
+            <button class="top-photo__like-button" type="button" aria-label="Поставить лайк">
               <svg width="13" height="12">
                 <use xlink:href="img/icons/sprite.svg#like-icon"></use>
               </svg>
@@ -108,7 +108,7 @@
               </div>
               <p class="feed__item-comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               <div class="feed__like">
-                <button class="feed__like-button">
+                <button class="feed__like-button" type="button" aria-label="Поставить лайк">
                   <svg width="13" height="12">
                     <use xlink:href="img/icons/sprite.svg#like-icon"></use>
                   </svg>
@@ -136,7 +136,7 @@
               </div>
               <p class="feed__item-comment">Соседи будут рады!</p>
               <div class="feed__like">
-                <button class="feed__like-button">
+                <button class="feed__like-button" type="button" aria-label="Поставить лайк">
                   <svg width="13" height="12">
                     <use xlink:href="img/icons/sprite.svg#like-icon"></use>
                   </svg>
@@ -164,7 +164,7 @@
               </div>
               <p class="feed__item-comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <div class="feed__like">
-                <button class="feed__like-button">
+                <button class="feed__like-button" type="button" aria-label="Поставить лайк">
                   <svg width="13" height="12">
                     <use xlink:href="img/icons/sprite.svg#like-icon"></use>
                   </svg>
@@ -192,7 +192,7 @@
               </div>
               <p class="feed__item-comment">Самая кубанская в мире!</p>
               <div class="feed__like">
-                <button class="feed__like-button">
+                <button class="feed__like-button" type="button" aria-label="Поставить лайк">
                   <svg width="13" height="12">
                     <use xlink:href="img/icons/sprite.svg#like-icon"></use>
                   </svg>
@@ -220,7 +220,7 @@
               </div>
               <p class="feed__item-comment">Где снег-то?</p>
               <div class="feed__like">
-                <button class="feed__like-button">
+                <button class="feed__like-button" type="button" aria-label="Поставить лайк">
                   <svg width="13" height="12">
                     <use xlink:href="img/icons/sprite.svg#like-icon"></use>
                   </svg>
@@ -248,7 +248,7 @@
               </div>
               <p class="feed__item-comment">Всем GM и взаимные лайки!</p>
               <div class="feed__like">
-                <button class="feed__like-button">
+                <button class="feed__like-button" type="button" aria-label="Поставить лайк" >
                   <svg width="13" height="12">
                     <use xlink:href="img/icons/sprite.svg#like-icon"></use>
                   </svg>
@@ -296,21 +296,21 @@
               <div class="tools__filter tools__filter--current">
                 <div class="tools__control tools__control--crop">
                   <div class="tools__scale tools__scale--crop"></div>
-                  <div class="tools__toggle tools__toggle--crop"></div>
+                  <div class="tools__toggle tools__toggle--crop" tabindex="0" aria-label="Настроить кадрирование"></div>
                 </div>
               </div>
 
               <div class="tools__filter">
                 <div class="tools__control tools__control--fill">
                   <div class="tools__scale tools__scale--fill"></div>
-                  <div class="tools__toggle tools__toggle--fill"></div>
+                  <div class="tools__toggle tools__toggle--fill" tabindex="0" aria-label="Настроить заливку"></div>
                 </div>
               </div>
 
               <div class="tools__filter">
                 <div class="tools__control tools__control--contrast">
                   <div class="tools__scale tools__scale--contrast"></div>
-                  <div class="tools__toggle tools__toggle--contrast"></div>
+                  <div class="tools__toggle tools__toggle--contrast" tabindex="0" aria-label="Настроить контрастность"></div>
                 </div>
               </div>
 
@@ -329,7 +329,7 @@
     <!-- Footer -->
     <footer class="page-footer">
       <div class="page-footer__wrapper container">
-        <a class="page-footer__logo-link" href="index.html">
+        <a class="page-footer__logo-link" href="index.html" aria-label="Перейти на главную страницу">
           <svg class="page-footer__logo page-footer__logo--mobile" width="145" height="40">
             <use xlink:href="img/icons/sprite.svg#footer-logo-mobile"></use>
           </svg>
