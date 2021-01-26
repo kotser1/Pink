@@ -2,136 +2,136 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
-  &__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.feed__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 
-    @media (min-width: $tablet-width) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-    }
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
+}
 
-  &__item {
-    margin-top: 20px;
+.feed__item {
+  margin-top: 20px;
 
-    @media (min-width: $tablet-width) {
-      width: 300px;
-      min-height: 455px;
-      margin-right: 20px;
-      display: flex;
-      flex-direction: column;
-
-      &:nth-child(2n+2) {
-        margin-right: 0;
-
-        @media (min-width: $desktop-width) {
-          margin-right: 20px;
-        }
-      }
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 34px;
-      min-height: 555px;
-
-      &:nth-child(3n+3) {
-        margin-right: 0;
-      }
-    }
-
-    &:nth-child(4) {
-      @media (max-width: $mobile-width) {
-        margin-top: 21px;
-      }
-    }
-  }
-
-  &__item-image {
-    display: block;
-  }
-
-  &__item-wrapper {
-    background-color: $section-background;
-    min-height: 121px;
-    padding: 18px 0 18px 17px;
-    box-sizing: border-box;
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    min-height: 455px;
+    margin-right: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
-    @media (min-width: $tablet-width) {
-      min-height: 155px;
-      padding: 23px 30px 23px 30px;
-      flex-grow: 1;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 24px 30px 22px 27px;
-    }
-  }
-
-  &__item-info {
-    height: 24px;
-  }
-
-  &__item-date {
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 24px;
-    text-transform: uppercase;
-  }
-
-  &__item-comment {
-    margin: 0;
-    padding: 0;
-
-    @media (min-width: $tablet-width) {
-      flex-grow: 1;
-    }
-  }
-
-  &__like {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: 11px;
-
-    @media (min-width: $tablet-width) {
-      margin-top: 0;
-      justify-content: space-between;
-    }
-  }
-
-  &__like-button {
-    border: none;
-    background-color: transparent;
-    padding: 0;
-    margin-right: 18px;
-    margin-top: 0;
-    cursor: pointer;
-
-    @media (min-width: $tablet-width) {
-      order: 1;
+    &:nth-child(2n+2) {
       margin-right: 0;
-      margin-left: 16px;
-      margin-top: 3px;
+
+      @media (min-width: $desktop-width) {
+        margin-right: 20px;
+      }
     }
   }
 
-  &__like-text {
-    font-family: inherit;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 24px;
-    color: $pink;
-    text-transform: uppercase;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 34px;
+    min-height: 555px;
 
-    @media (min-width: $tablet-width) {
-      margin-top: 2px;
+    &:nth-child(3n+3) {
+      margin-right: 0;
     }
+  }
+
+  &:nth-child(4) {
+    @media (max-width: $mobile-width) {
+      margin-top: 21px;
+    }
+  }
+}
+
+.feed__item-image {
+  display: block;
+}
+
+.feed__item-wrapper {
+  background-color: $section-background;
+  min-height: 121px;
+  padding: 18px 0 18px 17px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    min-height: 155px;
+    padding: 23px 30px 23px 30px;
+    flex-grow: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 24px 30px 22px 27px;
+  }
+}
+
+.feed__item-info {
+  height: 24px;
+}
+
+.feed__item-date {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.feed__item-comment {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+  }
+}
+
+.feed__like {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    justify-content: space-between;
+  }
+}
+
+.feed__like-button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin-right: 18px;
+  margin-top: 0;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin-right: 0;
+    margin-left: 16px;
+    margin-top: 3px;
+  }
+}
+
+.feed__like-text {
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $pink;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
   }
 }

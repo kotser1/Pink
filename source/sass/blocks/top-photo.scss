@@ -30,101 +30,101 @@
       right: 130px;
     }
   }
+}
 
-  &__image {
-    width: 100%;
-    display: block;
+.top-photo__image {
+  width: 100%;
+  display: block;
+}
+
+.top-photo__info {
+  @media (min-width: $desktop-width) {
+    padding-top: 1px;
+  }
+}
+
+.top-photo__author {
+  font-weight: 700;
+}
+
+.top-photo__date {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.top-photo__comment {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
   }
 
-  &__info {
-    @media (min-width: $desktop-width) {
-      padding-top: 1px;
-    }
+  @media (min-width: $desktop-width) {
+    width: 940px;
   }
+}
 
-  &__author {
-    font-weight: 700;
-  }
+.top-photo__wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 18px 10px 18px 17px;
+  background-color: $section-background;
 
-  &__date {
-    font-size: 12px;
-    font-weight: 300;
-    text-transform: uppercase;
-  }
-
-  &__comment {
-    margin: 0;
-
-    @media (min-width: $tablet-width) {
-      order: 2;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 940px;
-    }
-  }
-
-  &__wrapper {
-    box-sizing: border-box;
-    margin: 0 auto;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 18px 10px 18px 17px;
-    background-color: $section-background;
-
-    @media (min-width: $tablet-width) {
-      display: flex;
-      width: 620px;
-      flex-wrap: wrap;
-      margin: 0 auto;
-      justify-content: space-between;
-      padding: 23px 30px 24px 30px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 940px;
-      padding: 23px 31px 23px 27px;
-    }
-  }
-
-  &__like {
+  @media (min-width: $tablet-width) {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: 11px;
-
-    @media (min-width: $tablet-width) {
-      margin-top: 0;
-      justify-content: space-between;
-    }
+    width: 620px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 23px 30px 24px 30px;
   }
 
-  &__like-button {
-    border: none;
-    background-color: transparent;
-    padding: 0;
-    margin-right: 19px;
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    padding: 23px 31px 23px 27px;
+  }
+}
+
+.top-photo__like {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 11px;
+
+  @media (min-width: $tablet-width) {
     margin-top: 0;
-    cursor: pointer;
-
-    @media (min-width: $tablet-width) {
-      order: 1;
-      margin-right: 0;
-      margin-left: 16px;
-      margin-top: 3px;
-    }
+    justify-content: space-between;
   }
+}
 
-  &__like-text {
-    font-family: inherit;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 24px;
-    color: $pink;
-    text-transform: uppercase;
+.top-photo__like-button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin-right: 19px;
+  margin-top: 0;
+  cursor: pointer;
 
-    @media (min-width: $tablet-width) {
-      margin-top: 2px;
-    }
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin-right: 0;
+    margin-left: 16px;
+    margin-top: 3px;
+  }
+}
+
+.top-photo__like-text {
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $pink;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
   }
 }

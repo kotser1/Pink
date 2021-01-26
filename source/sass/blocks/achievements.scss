@@ -56,13 +56,13 @@
   @media (min-width: $tablet-width) {
     padding-left: 97px;
   }
-}
 
-.achievements__item:last-child {
-  margin-bottom: 47px;
+  &:last-child {
+    margin-bottom: 47px;
 
-  @media (min-width: $desktop-width) {
-    margin-bottom: 10px;
+    @media (min-width: $desktop-width) {
+      margin-bottom: 10px;
+    }
   }
 }
 
