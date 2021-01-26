@@ -396,6 +396,19 @@
     outline: none;
     border: 2px solid $pink;
   }
+
+  &::placeholder {
+    color: $basic-blue;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $basic-blue;
+  }
+
+  &::-moz-placeholder {
+    color: $basic-blue;
+    opacity: 1;
+  }
 }
 
 .form__send {
