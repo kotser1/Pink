@@ -144,6 +144,7 @@
   &:hover {
     background-color: $white;
     color: $pink;
+    box-shadow: 0 5px 7px $download-button-shadow;
   }
 
   &:active {
