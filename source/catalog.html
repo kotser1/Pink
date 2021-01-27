@@ -273,33 +273,33 @@
 
           <div class="editor__tools tools">
             <div class="tools__wrapper">
-              <label class="tools__label tools__label--current">
+              <label class="tools__label tools__label--current" for="crop">
                 <svg class="tools__image tools__image--crop tools__image--current">
                   <use xlink:href="img/icons/sprite.svg#crop-icon"></use>
                 </svg>
                 <span class="tools__control tools__control--crop tools__control--current">
-                  <input class="visually-hidden">
-                  <span class="tools__toggle tools__toggle--crop"></span>
+                  <input class="visually-hidden" id="crop" name="crop" type="range" min="1" max="100" step="1" value="80">
+                  <span class="tools__toggle tools__toggle--crop" tabindex="0" aria-label="Настроить кадрирование"></span>
                 </span>
               </label>
 
-              <label class="tools__label">
+              <label class="tools__label" for="fill">
                 <svg class="tools__image tools__image--fill">
                   <use xlink:href="img/icons/sprite.svg#fill-icon"></use>
                 </svg>
                 <span class="tools__control tools__control--fill">
-                  <input class="visually-hidden">
-                  <span class="tools__toggle tools__toggle--fill"></span>
+                  <input class="visually-hidden" id="fill" name="fill" type="range" min="1" max="100" step="1" value="10">
+                  <span class="tools__toggle tools__toggle--fill" tabindex="0" aria-label="Настроить заливку"></span>
                 </span>
               </label>
 
-              <label class="tools__label">
+              <label class="tools__label" for="contrast">
                 <svg class="tools__image tools__image--contrast">
                   <use xlink:href="img/icons/sprite.svg#contrast-icon"></use>
                 </svg>
                 <span class="tools__control tools__control--contrast">
-                  <input class="visually-hidden">
-                  <span class="tools__toggle tools__toggle--contrast"></span>
+                  <input class="visually-hidden" id="contrast" name="contrast" type="range" min="1" max="100" step="1" value="50">
+                  <span class="tools__toggle tools__toggle--contrast" tabindex="0" aria-label="Настроить контрастность"></span>
                 </span>
               </label>
             </div>
