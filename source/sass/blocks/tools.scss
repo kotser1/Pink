@@ -1,184 +1,187 @@
-.tools__button {
-  border: 0;
-  padding: 0;
-  margin: 0;
-
-  &:not(:last-child) {
-    margin-right: 35px;
-  }
-
-  svg {
-    fill: $basic-blue;
-    opacity: 0.3;
-  }
-
-  &:hover svg {
-    opacity: 0.5;
-  }
-
-  &--current svg {
-    opacity: 1;
-    fill: $pink;
-  }
-
-  &--current:hover svg {
-    opacity: 1;
-    fill: $pink;
-  }
-}
-
-.tools__buttons-wrapper {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 206px;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.tools__filters-wrapper {
-  border-bottom: 1px solid $blue-opacity;
-  margin-bottom: 38px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-    border-bottom: 0;
-  }
-}
-
-.tools__filter {
-  display: none;
+.tools__wrapper {
   width: 320px;
   margin: 0 auto;
+  min-height: 162px;
+  padding: 8px 51px 34px 39px;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 275px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-bottom: none;
+    padding: 0;
+    margin-top: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.tools__label {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    min-height: 65px;
+    align-items: center;
+
+    &:first-child {
+      margin-bottom: 8px;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.tools__image {
+  fill: $basic-blue;
+  opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 29px;
+    margin-left: 4px;
+    fill: $pink;
+    opacity: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 48px;
+    margin-left: 0;
+  }
+
+  &:hover {
+    opacity: 0.5;
+
+    @media (min-width: $tablet-width) {
+      opacity: 1;
+    }
+  }
+}
+
+.tools__image--crop {
+  width: 44px;
+  height: 44px;
+
+  @media (min-width: $tablet-width) {
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.tools__image--fill {
+  width: 48px;
+  height: 43px;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 22px;
+    margin: 3px 28px 0 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 48px;
+    height: 43px;
+    margin: 0 44px 0 0;
+  }
+}
+
+.tools__image--contrast {
+  width: 32px;
+  height: 32px;
+
+  @media (min-width: $tablet-width) {
+    width: 16px;
+    height: 16px;
+    margin-left: 7px;
+    margin-right: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 32px;
+    height: 32px;
+    margin-left: 6px;
+    margin-right: 54px;
+  }
+}
+
+.tools__image--current {
+  fill: $pink;
+  opacity: 1;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+
+.tools__control {
+  display: none;
+  position: absolute;
+  width: 240px;
+  height: 2px;
+  background-color: $basic-blue;
+  top: 125px;
+  left: 40px;
 
   @media (min-width: $tablet-width) {
     display: block;
-    width: 275px;
-    border-bottom: 1px solid $blue-opacity;
+    position: relative;
+    width: 202px;
+    margin-left: auto;
+    margin-right: 18px;
+    top: 0;
+    left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 410px;
-
-    &:last-child {
-      border-bottom: 0;
-    }
+    width: 288px;
   }
 }
 
-.tools__filter--current {
+.tools__control--current {
   display: block;
 }
 
-.tools__control {
-  position: relative;
-  height: 36px;
-  padding-top: 36px;
-  padding-right: 40px;
-  padding-left: 40px;
-
+.tools__control::after {
   @media (min-width: $tablet-width) {
-    padding-right: 18px;
-    padding-left: 55px;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 275px;
+    left: -55px;
+    height: 1px;
+    background-color: $blue-opacity;
+    bottom: -35px;
+    box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 30px;
-    padding-left: 92px;
-  }
-
-  &--contrast {
-    @media (min-width: $tablet-width) {
-      padding-top: 33px;
-      position: relative;
-    }
-  }
-
-  &--contrast::before {
-    @media (min-width: $tablet-width) {
-      position: absolute;
-      content: "";
-      width: 16px;
-      height: 16px;
-      top: 26px;
-      left: 7px;
-      background: $section-background url("../img/icons/contrast-icon.svg") no-repeat;
-      background-size: contain;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 32px;
-      height: 32px;
-      top: 18px;
-      left: 6px;
-    }
-  }
-
-  &--crop {
-    @media (min-width: $tablet-width) {
-      position: relative;
-    }
-  }
-
-  &--crop::before {
-    @media (min-width: $tablet-width) {
-      position: absolute;
-      content: "";
-      width: 22px;
-      height: 22px;
-      top: 26px;
-      left: 4px;
-      background: $section-background url("../img/icons/crop-icon.svg") no-repeat;
-      background-size: contain;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 44px;
-      height: 44px;
-      top: 15px;
-      left: 0;
-    }
-  }
-
-  &--fill {
-    @media (min-width: $tablet-width) {
-      position: relative;
-    }
-  }
-
-  &--fill::before {
-    @media (min-width: $tablet-width) {
-      position: absolute;
-      content: "";
-      width: 24px;
-      height: 22px;
-      top: 27px;
-      left: 3px;
-      background: $section-background url("../img/icons/fill-icon.svg") no-repeat;
-      background-size: contain;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 48px;
-      height: 43px;
-      top: 15px;
-      left: 0;
-    }
+    width: 408px;
+    left: -90px;
   }
 }
 
-.tools__scale {
-  height: 2px;
-  background-color: $basic-blue;
+.tools__control--current .tools__toggle {
+  display: block;
 }
+
 
 .tools__toggle {
+  display: none;
   position: absolute;
-  top: 31px;
-  left: 233px;
   width: 10px;
   height: 10px;
   padding: 0;
@@ -187,47 +190,53 @@
   border-radius: 50%;
   cursor: pointer;
 
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
   &:hover {
     background-color: $pink;
   }
+}
 
-  &--crop {
-    left: 233px;
+.tools__toggle--crop {
+  top: -5px;
+  left: 193px;
 
-    @media (min-width: $tablet-width) {
-      left: 201px;
-    }
-
-    @media (min-width: $desktop-width) {
-      left: 161px;
-      top: 30px;
-    }
+  @media (min-width: $tablet-width) {
+    left: 146px;
   }
 
-  &--fill {
-    left: 233px;
+  @media (min-width: $desktop-width) {
+    left: 69px;
+    top: -6px;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      left: 80px;
-    }
+.tools__toggle--fill {
+  top: -5px;
+  left: 30px;
 
-    @media (min-width: $desktop-width) {
-      left: 339px;
-      top: 30px;
-    }
+  @media (min-width: $tablet-width) {
+    left: 25px;
   }
 
-  &--contrast {
-    left: 233px;
+  @media (min-width: $desktop-width) {
+    left: 247px;
+    top: -6px;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      left: 151px;
-      top: 28px;
-    }
+.tools__toggle--contrast {
+  top: -5px;
+  left: 120px;
 
-    @media (min-width: $desktop-width) {
-      left: 252px;
-      top: 27px;
-    }
+  @media (min-width: $tablet-width) {
+    left: 96px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 160px;
+    top: -6px;
   }
 }

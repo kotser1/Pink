@@ -272,48 +272,36 @@
           </picture>
 
           <div class="editor__tools tools">
-            <div class="tools__buttons-wrapper">
-              <button class="tools__button tools__button-crop tools__button--current" type="button">
-                <svg width="44" height="44">
+            <div class="tools__wrapper">
+              <label class="tools__label tools__label--current">
+                <svg class="tools__image tools__image--crop tools__image--current">
                   <use xlink:href="img/icons/sprite.svg#crop-icon"></use>
                 </svg>
-              </button>
+                <span class="tools__control tools__control--crop tools__control--current">
+                  <input class="visually-hidden">
+                  <span class="tools__toggle tools__toggle--crop"></span>
+                </span>
+              </label>
 
-              <button class="tools__button tools__button-fill" type="button">
-                <svg width="48" height="43">
+              <label class="tools__label">
+                <svg class="tools__image tools__image--fill">
                   <use xlink:href="img/icons/sprite.svg#fill-icon"></use>
                 </svg>
-              </button>
+                <span class="tools__control tools__control--fill">
+                  <input class="visually-hidden">
+                  <span class="tools__toggle tools__toggle--fill"></span>
+                </span>
+              </label>
 
-              <button class="tools__button tools__button-contrast" type="button">
-                <svg width="32" height="32">
+              <label class="tools__label">
+                <svg class="tools__image tools__image--contrast">
                   <use xlink:href="img/icons/sprite.svg#contrast-icon"></use>
                 </svg>
-              </button>
-            </div>
-
-            <div class="tools__filters-wrapper">
-              <div class="tools__filter tools__filter--current">
-                <div class="tools__control tools__control--crop">
-                  <div class="tools__scale tools__scale--crop"></div>
-                  <div class="tools__toggle tools__toggle--crop" tabindex="0" aria-label="Настроить кадрирование"></div>
-                </div>
-              </div>
-
-              <div class="tools__filter">
-                <div class="tools__control tools__control--fill">
-                  <div class="tools__scale tools__scale--fill"></div>
-                  <div class="tools__toggle tools__toggle--fill" tabindex="0" aria-label="Настроить заливку"></div>
-                </div>
-              </div>
-
-              <div class="tools__filter">
-                <div class="tools__control tools__control--contrast">
-                  <div class="tools__scale tools__scale--contrast"></div>
-                  <div class="tools__toggle tools__toggle--contrast" tabindex="0" aria-label="Настроить контрастность"></div>
-                </div>
-              </div>
-
+                <span class="tools__control tools__control--contrast">
+                  <input class="visually-hidden">
+                  <span class="tools__toggle tools__toggle--contrast"></span>
+                </span>
+              </label>
             </div>
           </div>
 
@@ -323,7 +311,6 @@
           </div>
         </div>
       </form>
-
     </main>
 
     <!-- Footer -->
